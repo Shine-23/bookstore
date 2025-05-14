@@ -6,12 +6,12 @@ A Spring Boot application that manages books, authors, and publishers using REST
 
 ## 🚀 Features
 
-- 📖 Create, Read, Update, Delete (CRUD) operations for Books
-- 👤 Manage authors and publishers
-- 🔄 Pagination and sorting for book listings
-- 🔍 Search books by title or author
-- 🧩 Layered architecture (Controller, Service, Repository)
-- 🛠️ Integrated with MySQL database
+- Create, Read, Update, Delete (CRUD) operations for Books
+- Manage authors and publishers
+- Pagination and sorting for book listings
+- Search books by title or author
+- Layered architecture (Controller, Service, Repository)
+- Integrated with MySQL database
 
 ---
 
@@ -50,7 +50,9 @@ spring.jpa.hibernate.ddl-auto=update
 ## 🧪API ENDPOINTS
 
 ### Books
+
 | Method   | Endpoint          | Description                                 |
+|----------|-------------------|---------------------------------------------|
 | `GET`    | `/api/books`      | Get all books (supports pagination/sorting) |
 | `GET`    | `/api/books/{id}` | Get a book by ID                            |
 | `POST`   | `/api/books`      | Add a new book                              |
@@ -58,11 +60,15 @@ spring.jpa.hibernate.ddl-auto=update
 | `DELETE` | `/api/books/{id}` | Delete a book                               |
 
 ### Authors
+
 | Method   | Endpoint          | Description     |
+|----------|-------------------|-----------------|
 | `GET`    | `/api/authors`    | Get all authors |
 
 ### Publishers
+
 | Method   | Endpoint          | Description        |
+|----------|-------------------|--------------------|
 | `GET`    | `/api/publishers` | Get all publishers |
 
 
